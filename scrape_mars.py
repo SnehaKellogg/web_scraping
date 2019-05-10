@@ -86,7 +86,7 @@ def scrape():
     html_table = df.to_html(header=False, index= False)
     #print(html_table)
 
-    # ## Mars Hemispheres
+    ## Mars Hemispheres
 
     base= 'https://astrogeology.usgs.gov'
     usgs_url = 'https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars'
@@ -114,7 +114,7 @@ def scrape():
         
         hemisphere_image_urls.append({'title': title_text, 'img_url': img_url})   
         
-        browser.click_link_by_text('Back') 
+        # browser.click_link_by_text('Back') 
 
     #print(hemisphere_image_urls)
 
